@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wassup</title>
+		
+		<link rel="stylesheet" href="{{ url_for('static', filename='mystylesheet.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1>Python Test Website<h1>
+			</div>
+			
+			<div id="content">
+				<div id="display">
+					<h3>Display Data</h3>
+					<ul>
+						<li><a href="">Display Names</a></li>
+						<li><a href="">Display Locations</a></li>
+						<li><a href="">Display Sports</a></li>
+					</ul>
+				</div>
+				<div id="entry">
+					<h4>Add a name to database:</h4>
+					<form action="/" method="post">
+						<input type="text" class="control-label" placeholder="John Doe" name="fullname" />
+						<input type="submit" class="btn btn-primary" value="Add" />
+					</form>
+				</div>
+			</div>
+
+			<div id="footer">
+				Copyright &copy; 2014 blahblahblah.
+			</div>
+		</div>
+
+	</body>
+</html>
